@@ -1,0 +1,15 @@
+PODS:
+  - Google-Mobile-Ads-SDK (7.26.0)
+  - PlayableAds (1.5.7)
+
+DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
+  - PlayableAds
+
+SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 22d4a6fe18d526adcc12a86d8cc2d53872700966
+  PlayableAds: 3b0623ec5e4052c74f72d6c72ada5748177075e1
+
+PODFILE CHECKSUM: 722b41387db003785c10b0292d0582f6ee97dd5e
+
+COCOAPODS: 1.2.1

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54ECA882011A1FBCEDDC61E3 /* libPods-PlayableAdMobDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */; };
 		C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */; };
 		C72AD3CE1FD8E6CA0000ADDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CD1FD8E6CA0000ADDA /* ViewController.m */; };
 		C72AD3D11FD8E6CA0000ADDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */; };
 		C72AD3D31FD8E6CA0000ADDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */; };
 		C72AD3D61FD8E6CA0000ADDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */; };
 		C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3D81FD8E6CA0000ADDA /* main.m */; };
+		C72AD3E11FD915E30000ADDA /* PlayableAdMobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55A1A6376D176D558A02BF05 /* Pods-PlayableAdMobDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableAdMobDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayableAdMobDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72AD3C61FD8E6CA0000ADDA /* PlayableAdMobDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayableAdMobDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72AD3C91FD8E6CA0000ADDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,9 @@
 		C72AD3D51FD8E6CA0000ADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C72AD3D71FD8E6CA0000ADDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C72AD3D81FD8E6CA0000ADDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C72AD3DF1FD915E30000ADDA /* PlayableAdMobAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayableAdMobAdapter.h; sourceTree = "<group>"; };
+		C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayableAdMobAdapter.m; sourceTree = "<group>"; };
+		ED5DDB74ABB6C7D2037F165D /* Pods-PlayableAdMobDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableAdMobDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54ECA882011A1FBCEDDC61E3 /* libPods-PlayableAdMobDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F43150F48FDCCDFF9061F0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55A1A6376D176D558A02BF05 /* Pods-PlayableAdMobDemo.debug.xcconfig */,
+				ED5DDB74ABB6C7D2037F165D /* Pods-PlayableAdMobDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C72AD3BD1FD8E6CA0000ADDA = {
 			isa = PBXGroup;
 			children = (
 				C72AD3C81FD8E6CA0000ADDA /* PlayableAdMobDemo */,
 				C72AD3C71FD8E6CA0000ADDA /* Products */,
+				3F43150F48FDCCDFF9061F0C /* Pods */,
+				CDB5E9E44B999966F0F68BC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,8 @@
 				C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */,
 				C72AD3CC1FD8E6CA0000ADDA /* ViewController.h */,
 				C72AD3CD1FD8E6CA0000ADDA /* ViewController.m */,
+				C72AD3DF1FD915E30000ADDA /* PlayableAdMobAdapter.h */,
+				C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */,
 				C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */,
 				C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */,
 				C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */,
@@ -71,6 +92,14 @@
 			path = PlayableAdMobDemo;
 			sourceTree = "<group>";
 		};
+		CDB5E9E44B999966F0F68BC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C72AD3DC1FD8E6CA0000ADDA /* Build configuration list for PBXNativeTarget "PlayableAdMobDemo" */;
 			buildPhases = (
+				2FF4100A71F3EB5EE95BDB6C /* [CP] Check Pods Manifest.lock */,
 				C72AD3C21FD8E6CA0000ADDA /* Sources */,
 				C72AD3C31FD8E6CA0000ADDA /* Frameworks */,
 				C72AD3C41FD8E6CA0000ADDA /* Resources */,
+				31CCA5058C8E0141BFD84766 /* [CP] Embed Pods Frameworks */,
+				DE4D58205DED88B20B36816C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +169,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FF4100A71F3EB5EE95BDB6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31CCA5058C8E0141BFD84766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE4D58205DED88B20B36816C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C72AD3C21FD8E6CA0000ADDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -145,6 +225,7 @@
 				C72AD3CE1FD8E6CA0000ADDA /* ViewController.m in Sources */,
 				C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */,
 				C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */,
+				C72AD3E11FD915E30000ADDA /* PlayableAdMobAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,27 +357,37 @@
 		};
 		C72AD3DD1FD8E6CA0000ADDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A1A6376D176D558A02BF05 /* Pods-PlayableAdMobDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLYVY7K3D3;
 				INFOPLIST_FILE = PlayableAdMobDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableAdMobDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C72AD3DE1FD8E6CA0000ADDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5DDB74ABB6C7D2037F165D /* Pods-PlayableAdMobDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLYVY7K3D3;
 				INFOPLIST_FILE = PlayableAdMobDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableAdMobDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
