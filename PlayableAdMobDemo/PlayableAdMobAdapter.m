@@ -42,6 +42,7 @@
     NSArray *ids = [trimIds componentsSeparatedByString:@" "];
     NSLog(@"playalbe appID: %@ and adUnitID: %@", ids[0], ids[1]);
     _pAd = [[PlayableAds alloc] initWithAdUnitID:ids[1] appID:ids[0]];
+    _pAd.autoLoad = NO;
     _pAd.delegate = self;
     [_pAd loadAd];
 }
