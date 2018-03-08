@@ -30,7 +30,9 @@
 }
 
 - (IBAction)loadAd:(UIButton *)sender {
+    _logLabel.text = @"";
     [self sendToLog:@"start loading ad"];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [[GADRewardBasedVideoAd sharedInstance] loadRequest:[GADRequest request]
                                            withAdUnitID:@"ca-app-pub-5451364651863658/5455468949"];
 }
@@ -44,7 +46,8 @@
 }
 
 - (void)sendToLog:(NSString *)msg {
-    _logLabel.text = msg;
+   _logLabel.text =  [_logLabel.text stringByAppendingFormat:@"%@\n", msg];
+    NSLog(@"%@", msg);
 }
 
 - (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
@@ -53,14 +56,13 @@
                                reward.type,
                                [reward.amount doubleValue]];
     [self sendToLog:rewardMessage];
-    NSLog(@"%@", rewardMessage);
 }
 
 - (void)rewardBasedVideoAdDidReceiveAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
     NSLog(@"--- ((( rewardBasedVideoAdDidReceiveAd");
     NSString *log = @"Reward based video ad is received.";
     [self sendToLog: log];
-    NSLog(@"%@", log);
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
 - (void)rewardBasedVideoAdDidOpen:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
@@ -82,6 +84,8 @@
 - (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
     didFailToLoadWithError:(NSError *)error {
     NSLog(@"Reward based video ad failed to load.");
+    [self sendToLog:[@"didFailToLoadWithError: " stringByAppendingString: error.description]];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
 @end
