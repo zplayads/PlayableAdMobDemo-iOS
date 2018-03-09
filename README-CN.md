@@ -36,11 +36,11 @@ d. 选择步骤1中申请好的广告位，点击“DONE”，进入下一步
 ![image](imgs/image11.png)
 e. 添加CUSTOM EVENT以便传递可玩广告信息，比如可玩广告的应用ID和广告位ID
 ![image](imgs/image12.png)
-d. 配制可玩广告id，注意，这里Class Name必须与写入项目中的文件名一致，以Demo为例，这里填写PlayableAdMobAdapter，如果没有特殊需要就与示例程序一致即可。Parameter第一个值为可玩广告平台申请的应用ID，第二个值为可玩广告平台申请的广告位ID，注意这两个值的顺序不能更改，且之间只有一个空格，否则可能请求不到可玩广告。
+f. 配制可玩广告id，注意，这里Class Name必须与写入项目中的文件名一致，以Demo为例，这里填写PlayableAdMobAdapter，如果没有特殊需要就与示例程序一致即可。Parameter第一个值为可玩广告平台申请的应用ID，第二个值为可玩广告平台申请的广告位ID，注意这两个值的顺序不能更改，且之间只有一个空格，否则可能请求不到可玩广告。
 ![image](imgs/image13.png)
-e. 以下图表示已经配制成功，点击“SAVE”将广告源保存。
+g. 以下图表示已经配制成功，点击“SAVE”将广告源保存。
 ![image](imgs/image14.png)
-f. 此时，可以看到PlayableAdUnit-ios广告位下已经有了一个三方广告源。
+h. 此时，可以看到PlayableAdUnit-ios广告位下已经有了一个三方广告源。
 ![image](imgs/image15.png)
 
 ### 3. 已有应用，修改现有广告位，使其支持可玩广告
