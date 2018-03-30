@@ -1,5 +1,5 @@
 ## 一 接入ZPLAY Ads SDK和AdMob SDK
-以cocoapod为例，其它请查看ZPLAY Ads广告接入文档，AdMob SDK接入文档，以下简要步骤
+以cocoapods为例，其它请查看ZPLAY Ads广告接入文档，AdMob SDK接入文档，以下简要步骤
 1. 在项目终端下执行```pod init```
 2. 编辑Podfile，添加库
 ```
@@ -28,11 +28,9 @@ e. 至此，已经获取Admob应用ID和广告位ID均已申请完毕，记录�
 ### 2 添加ZPLAY Ads广告源
 a. 点击Mediation目录下的“CREATE MEDIATION GROUP”按钮进入广告源设置页面
 ![image](imgs/image08.png)
-b. 这里务必选择Rewarded video，点击“CONTINUE”进入下一步设置
+b. 这里选择Rewarded video为例，点击“CONTINUE”进入下一步设置
 ![image](imgs/image09.png)
-c. 填写广告源名称方面管理，
-
-根据自己需求填写Name和其它信息，本示例命名为：Playable-Advertising-ios，其它默认。点击“ADD AD UNITS”添加广告位到该广告源。
+c. 填写广告源名称，根据自己需求填写Name和其它信息，本示例命名为：Playable-Advertising-ios，其它默认。点击“ADD AD UNITS”添加广告位到该广告源。
 ![image](imgs/image10.png)
 d. 选择步骤1中申请好的广告位，点击“DONE”，进入下一步
 ![image](imgs/image11.png)
