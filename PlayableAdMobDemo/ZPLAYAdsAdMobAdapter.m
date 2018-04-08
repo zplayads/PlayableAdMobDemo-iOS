@@ -45,7 +45,7 @@
     _pAd.autoLoad = NO;
     _pAd.delegate = self;
     [_rewardedConnector adapterDidSetUpRewardBasedVideoAd:self];
-    NSLog(@"zp=> 1 setUp");
+    NSLog(@"zp=> setUp");
 }
 
 - (void)stopBeingDelegate {
@@ -57,20 +57,24 @@
 
 - (void)requestRewardBasedVideoAd {
     [_pAd loadAd];
+    NSLog(@"zp=> requestRewardBasedVideoAd");
 }
 
 #pragma mark - PlayableAdsDelegate
 - (void)playableAdsDidLoad:(PlayableAds *)ads {
     [_rewardedConnector adapterDidReceiveRewardBasedVideoAd:self];
+    NSLog(@"zp=> adapterDidReceiveRewardBasedVideoAd");
 }
 
 - (void)playableAds:(PlayableAds *)ads didFailToLoadWithError:(NSError *)error {
     [_rewardedConnector adapter:self didFailToLoadRewardBasedVideoAdwithError:error];
+    NSLog(@"zp=> didFailToLoadRewardBasedVideoAdwithError");
 }
 
 - (void)playableAdsDidRewardUser:(PlayableAds *)ads {
     GADAdReward *reward = [[GADAdReward alloc] initWithRewardType:@"ZPLAYAds" rewardAmount:[NSDecimalNumber  decimalNumberWithString:@"1"]];
     [_rewardedConnector adapter: self didRewardUserWithReward:reward];
+    NSLog(@"zp=> didRewardUserWithReward");
 }
 
 - (void)playableAdsDidDismissScreen:(PlayableAds *)ads {
@@ -78,10 +82,12 @@
 
 - (void)playableAdsDidStartPlaying:(PlayableAds *)ads {
     [_rewardedConnector adapterDidStartPlayingRewardBasedVideoAd:self];
+    NSLog(@"zp=> adapterDidStartPlayingRewardBasedVideoAd");
 }
 
 - (void)playableAdsWillPresentScreen:(PlayableAds *)ads {
      [_rewardedConnector adapterDidOpenRewardBasedVideoAd:self];
+    NSLog(@"zp=> adapterDidOpenRewardBasedVideoAd");
 }
 
 - (void)playableAdsDidEndPlaying:(PlayableAds *)ads {
@@ -89,14 +95,17 @@
 
 - (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
     [_rewardedConnector adapterDidCloseRewardBasedVideoAd:self];
+    NSLog(@"zp=> adapterDidCloseRewardBasedVideoAd");
 }
 
 - (void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
     [_rewardedConnector adapterDidGetAdClick:self];
+    NSLog(@"zp=> adapterDidGetAdClick");
 }
 
 - (void)playableAdsWillLeaveApplication:(PlayableAds *)ads {
     [_rewardedConnector adapterWillLeaveApplication:self];
+    NSLog(@"zp=> adapterWillLeaveApplication");
 }
 
 

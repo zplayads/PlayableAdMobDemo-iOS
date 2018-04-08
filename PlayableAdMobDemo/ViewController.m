@@ -40,8 +40,9 @@
 - (IBAction)presentAd:(UIButton *)sender {
     [self sendToLog:@"present ad"];
     if ([[GADRewardBasedVideoAd sharedInstance] isReady]) {
-        [self sendToLog:@"rewarded ad not ready."];
         [[GADRewardBasedVideoAd sharedInstance] presentFromRootViewController:self];
+    } else {
+        [self sendToLog:@"rewarded ad not ready."];
     }
 }
 
