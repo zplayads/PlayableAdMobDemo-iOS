@@ -14,7 +14,7 @@
 		C72AD3D31FD8E6CA0000ADDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */; };
 		C72AD3D61FD8E6CA0000ADDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */; };
 		C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3D81FD8E6CA0000ADDA /* main.m */; };
-		C72AD3E11FD915E30000ADDA /* PlayableAdMobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */; };
+		C72AD3E11FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		C72AD3D51FD8E6CA0000ADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C72AD3D71FD8E6CA0000ADDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C72AD3D81FD8E6CA0000ADDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C72AD3DF1FD915E30000ADDA /* PlayableAdMobAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayableAdMobAdapter.h; sourceTree = "<group>"; };
-		C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayableAdMobAdapter.m; sourceTree = "<group>"; };
+		C72AD3DF1FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLAYAdsAdMobAdapter.h; sourceTree = "<group>"; };
+		C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPLAYAdsAdMobAdapter.m; sourceTree = "<group>"; };
 		ED5DDB74ABB6C7D2037F165D /* Pods-PlayableAdMobDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableAdMobDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,8 +81,8 @@
 				C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */,
 				C72AD3CC1FD8E6CA0000ADDA /* ViewController.h */,
 				C72AD3CD1FD8E6CA0000ADDA /* ViewController.m */,
-				C72AD3DF1FD915E30000ADDA /* PlayableAdMobAdapter.h */,
-				C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */,
+				C72AD3DF1FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.h */,
+				C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */,
 				C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */,
 				C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */,
 				C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */,
@@ -228,7 +228,7 @@
 				C72AD3CE1FD8E6CA0000ADDA /* ViewController.m in Sources */,
 				C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */,
 				C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */,
-				C72AD3E11FD915E30000ADDA /* PlayableAdMobAdapter.m in Sources */,
+				C72AD3E11FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  PlayableAdMobAdapter.h
+//  ZPLAYAdsAdMobAdapter.h
 //  PlayableAdMobDemo
 //
 //  Created by lgd on 2017/12/7.
@@ -12,7 +12,7 @@
 @import GoogleMobileAds;
 @import PlayableAds;
 
-@interface PlayableAdMobAdapter : NSObject<GADMRewardBasedVideoAdNetworkAdapter, PlayableAdsDelegate> {
+@interface ZPLAYAdsAdMobAdapter : NSObject<GADMRewardBasedVideoAdNetworkAdapter, PlayableAdsDelegate> {
 }
 @property(nonatomic, strong) PlayableAds *pAd;
 @property(nonatomic, strong) id<GADMAdNetworkConnector> connector;

@@ -1,15 +1,15 @@
 //
-//  PlayableAdMobAdapter.m
+//  ZPLAYAdsAdMobAdapter.m
 //  PlayableAdMobDemo
 //
 //  Created by lgd on 2017/12/7.
 //  Copyright © 2017年 playable. All rights reserved.
 //
 
-#import "PlayableAdMobAdapter.h"
+#import "ZPLAYAdsAdMobAdapter.h"
 @import PlayableAds;
 
-@implementation PlayableAdMobAdapter
+@implementation ZPLAYAdsAdMobAdapter
 
 - (instancetype)initWithRewardBasedVideoAdNetworkConnector: (id<GADMRewardBasedVideoAdNetworkConnector>)connector {
     if (!connector) {
