@@ -44,7 +44,8 @@
     _pAd = [[PlayableAds alloc] initWithAdUnitID:ids[1] appID:ids[0]];
     _pAd.autoLoad = NO;
     _pAd.delegate = self;
-    [_pAd loadAd];
+    [_rewardedConnector adapterDidSetUpRewardBasedVideoAd:self];
+    NSLog(@"zp=> 1 setUp");
 }
 
 - (void)stopBeingDelegate {
@@ -55,27 +56,47 @@
 }
 
 - (void)requestRewardBasedVideoAd {
+    [_pAd loadAd];
 }
 
-
-#pragma mark PlayableAd
-- (void)playableAdsDidRewardUser:(PlayableAds *)ads {
-    id<GADMRewardBasedVideoAdNetworkConnector> strongConnector = _rewardedConnector;
-    [strongConnector adapter: nil didRewardUserWithReward:nil];
-}
-
+#pragma mark - PlayableAdsDelegate
 - (void)playableAdsDidLoad:(PlayableAds *)ads {
-    id<GADMRewardBasedVideoAdNetworkConnector> strongConnector = _rewardedConnector;
-    if (_pAd.isReady) {
-        [strongConnector adapterDidReceiveRewardBasedVideoAd:self];
-    } else {
-        NSString *description = @"Failed to load ad.";
-        NSDictionary *userInfo =
-        @{NSLocalizedDescriptionKey : description, NSLocalizedFailureReasonErrorKey : description};
-        NSError *error =
-        [NSError errorWithDomain:@"com.google.mediation.sample" code:0 userInfo:userInfo];
-        [strongConnector adapter:self didFailToLoadRewardBasedVideoAdwithError:error];
-    }
+    [_rewardedConnector adapterDidReceiveRewardBasedVideoAd:self];
+}
+
+- (void)playableAds:(PlayableAds *)ads didFailToLoadWithError:(NSError *)error {
+    [_rewardedConnector adapter:self didFailToLoadRewardBasedVideoAdwithError:error];
+}
+
+- (void)playableAdsDidRewardUser:(PlayableAds *)ads {
+    GADAdReward *reward = [[GADAdReward alloc] initWithRewardType:@"ZPLAYAds" rewardAmount:[NSDecimalNumber  decimalNumberWithString:@"1"]];
+    [_rewardedConnector adapter: self didRewardUserWithReward:reward];
+}
+
+- (void)playableAdsDidDismissScreen:(PlayableAds *)ads {
+}
+
+- (void)playableAdsDidStartPlaying:(PlayableAds *)ads {
+    [_rewardedConnector adapterDidStartPlayingRewardBasedVideoAd:self];
+}
+
+- (void)playableAdsWillPresentScreen:(PlayableAds *)ads {
+     [_rewardedConnector adapterDidOpenRewardBasedVideoAd:self];
+}
+
+- (void)playableAdsDidEndPlaying:(PlayableAds *)ads {
+}
+
+- (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
+    [_rewardedConnector adapterDidCloseRewardBasedVideoAd:self];
+}
+
+- (void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
+    [_rewardedConnector adapterDidGetAdClick:self];
+}
+
+- (void)playableAdsWillLeaveApplication:(PlayableAds *)ads {
+    [_rewardedConnector adapterWillLeaveApplication:self];
 }
 
 

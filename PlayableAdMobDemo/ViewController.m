@@ -50,6 +50,7 @@
     NSLog(@"%@", msg);
 }
 
+# pragma mark - GADRewardBasedVideoAdDelegate
 - (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
    didRewardUserWithReward:(GADAdReward *)reward {
     NSString *rewardMessage = [NSString stringWithFormat:@"Reward received with currency %@ , amount %lf",
@@ -59,31 +60,31 @@
 }
 
 - (void)rewardBasedVideoAdDidReceiveAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
-    NSLog(@"--- ((( rewardBasedVideoAdDidReceiveAd");
+    NSLog(@"rewardBasedVideoAdDidReceiveAd");
     NSString *log = @"Reward based video ad is received.";
     [self sendToLog: log];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
 - (void)rewardBasedVideoAdDidOpen:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
-    NSLog(@"Opened reward based video ad.");
+    NSLog(@"rewardBasedVideoAdDidOpen");
 }
 
 - (void)rewardBasedVideoAdDidStartPlaying:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
-    NSLog(@"Reward based video ad started playing.");
+    NSLog(@"rewardBasedVideoAdDidStartPlaying");
 }
 
 - (void)rewardBasedVideoAdDidClose:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
-    NSLog(@"Reward based video ad is closed.");
+    NSLog(@"rewardBasedVideoAdDidClose");
 }
 
 - (void)rewardBasedVideoAdWillLeaveApplication:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
-    NSLog(@"Reward based video ad will leave application.");
+    NSLog(@"rewardBasedVideoAdWillLeaveApplication");
 }
 
 - (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
     didFailToLoadWithError:(NSError *)error {
-    NSLog(@"Reward based video ad failed to load.");
+    NSLog(@"rewardBasedVideoAd didFailToLoadWithError");
     [self sendToLog:[@"didFailToLoadWithError: " stringByAppendingString: error.description]];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
