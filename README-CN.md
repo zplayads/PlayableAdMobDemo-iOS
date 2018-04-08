@@ -36,7 +36,7 @@ d. 选择步骤1中申请好的广告位，点击“DONE”，进入下一步
 ![image](imgs/image11.png)
 e. 添加CUSTOM EVENT以便传递ZPLAY Ads应用ID和广告位ID
 ![image](imgs/image12.png)
-f. 配制ZPLAY Ads应用ID及广告位ID，注意，这里Class Name必须与写入项目中的文件名一致，以Demo为例，这里填写PlayableAdMobAdapter（可自定义，如果没有特殊需要就与示例程序一致即可）。Parameter第一个值为ZPLAY Ads平台申请的应用ID，第二个值为ZPLAY Ads平台申请的广告位ID，注意这两个值的顺序不能更改，且之间只有一个空格，否则可能请求不到广告。
+f. 配制ZPLAY Ads应用ID及广告位ID，注意，这里Class Name必须与写入项目中的文件名一致，以Demo为例，这里填写ZPLAYAdsAdMobAdapter（可自定义，如果没有特殊需要就与示例程序一致即可）。Parameter第一个值为ZPLAY Ads平台申请的应用ID，第二个值为ZPLAY Ads平台申请的广告位ID，注意这两个值的顺序不能更改，且之间只有一个空格，否则可能请求不到广告。
 ![image](imgs/image13.png)
 
 注：您在测试中可使用如下id进行测试，测试id不会产生收益，应用上线时请使用您申请的正式id。
@@ -60,10 +60,10 @@ c. 向广告源里添加广告位
 ![image](imgs/image18.png)
 d. 选择已添加的广告位，点击“CONTINUE”进入下一步
 ![image](imgs/image19.png)
-e. 配制适配器以及ZPLAY Ads应用ID及广告位ID，此处与上一节步骤d相同。
-![image](imgs/image20.png)
+e. 配制适配器以及ZPLAY Ads应用ID及广告位ID，此处与上一节步骤f相同。
+
 f. 此图表示已经配制完成，点击“SAVE”保存配置
 ![image](imgs/image21.png)
 g. 与步骤a对比，此处三方源增加了1，表明配置成功。
 ![image](imgs/image22.png)
-## 三 适配类与请求请参考DEMO
+## 三 [适配类](./PlayableAdMobDemo/ZPLAYAdsAdMobAdapter.m)与请求请参考[DEMO](https://github.com/zplayads/PlayableAdMobDemo-iOS)
