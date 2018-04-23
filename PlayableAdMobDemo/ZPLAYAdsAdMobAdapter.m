@@ -78,6 +78,8 @@
 }
 
 - (void)playableAdsDidDismissScreen:(PlayableAds *)ads {
+    [_rewardedConnector adapterDidCloseRewardBasedVideoAd:self];
+    NSLog(@"zp=> adapterDidCloseRewardBasedVideoAd");
 }
 
 - (void)playableAdsDidStartPlaying:(PlayableAds *)ads {
@@ -94,8 +96,6 @@
 }
 
 - (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
-    [_rewardedConnector adapterDidCloseRewardBasedVideoAd:self];
-    NSLog(@"zp=> adapterDidCloseRewardBasedVideoAd");
 }
 
 - (void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
