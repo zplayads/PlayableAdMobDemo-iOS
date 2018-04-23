@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		54ECA882011A1FBCEDDC61E3 /* libPods-PlayableAdMobDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */; };
 		C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */; };
-		C72AD3CE1FD8E6CA0000ADDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CD1FD8E6CA0000ADDA /* ViewController.m */; };
+		C72AD3CE1FD8E6CA0000ADDA /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */; };
 		C72AD3D11FD8E6CA0000ADDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */; };
 		C72AD3D31FD8E6CA0000ADDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */; };
 		C72AD3D61FD8E6CA0000ADDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */; };
 		C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3D81FD8E6CA0000ADDA /* main.m */; };
-		C72AD3E11FD915E30000ADDA /* PlayableAdMobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */; };
+		C72AD3E11FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */; };
+		C77A98B620887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98B520887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m */; };
+		C77A98B920887E8400840186 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98B820887E8400840186 /* MainViewController.m */; };
+		C77A98BC20887EBB00840186 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98BB20887EBB00840186 /* InterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,15 +26,21 @@
 		C72AD3C61FD8E6CA0000ADDA /* PlayableAdMobDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayableAdMobDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72AD3C91FD8E6CA0000ADDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C72AD3CC1FD8E6CA0000ADDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C72AD3CD1FD8E6CA0000ADDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C72AD3CC1FD8E6CA0000ADDA /* RewardedVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedVideoViewController.h; sourceTree = "<group>"; };
+		C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedVideoViewController.m; sourceTree = "<group>"; };
 		C72AD3D01FD8E6CA0000ADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C72AD3D51FD8E6CA0000ADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C72AD3D71FD8E6CA0000ADDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C72AD3D81FD8E6CA0000ADDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C72AD3DF1FD915E30000ADDA /* PlayableAdMobAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayableAdMobAdapter.h; sourceTree = "<group>"; };
-		C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayableAdMobAdapter.m; sourceTree = "<group>"; };
+		C72AD3DF1FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLAYAdsAdMobAdapter.h; sourceTree = "<group>"; };
+		C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPLAYAdsAdMobAdapter.m; sourceTree = "<group>"; };
+		C77A98B420887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLAYAdsAdMobInterstitialAdapter.h; sourceTree = "<group>"; };
+		C77A98B520887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPLAYAdsAdMobInterstitialAdapter.m; sourceTree = "<group>"; };
+		C77A98B720887E8400840186 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C77A98B820887E8400840186 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C77A98BA20887EBB00840186 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		C77A98BB20887EBB00840186 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
 		ED5DDB74ABB6C7D2037F165D /* Pods-PlayableAdMobDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableAdMobDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,10 +88,16 @@
 			children = (
 				C72AD3C91FD8E6CA0000ADDA /* AppDelegate.h */,
 				C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */,
-				C72AD3CC1FD8E6CA0000ADDA /* ViewController.h */,
-				C72AD3CD1FD8E6CA0000ADDA /* ViewController.m */,
-				C72AD3DF1FD915E30000ADDA /* PlayableAdMobAdapter.h */,
-				C72AD3E01FD915E30000ADDA /* PlayableAdMobAdapter.m */,
+				C77A98B720887E8400840186 /* MainViewController.h */,
+				C77A98B820887E8400840186 /* MainViewController.m */,
+				C72AD3CC1FD8E6CA0000ADDA /* RewardedVideoViewController.h */,
+				C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */,
+				C77A98BA20887EBB00840186 /* InterstitialViewController.h */,
+				C77A98BB20887EBB00840186 /* InterstitialViewController.m */,
+				C72AD3DF1FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.h */,
+				C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */,
+				C77A98B420887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.h */,
+				C77A98B520887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m */,
 				C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */,
 				C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */,
 				C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */,
@@ -134,7 +149,7 @@
 				TargetAttributes = {
 					C72AD3C51FD8E6CA0000ADDA = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -225,10 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72AD3CE1FD8E6CA0000ADDA /* ViewController.m in Sources */,
+				C72AD3CE1FD8E6CA0000ADDA /* RewardedVideoViewController.m in Sources */,
+				C77A98B920887E8400840186 /* MainViewController.m in Sources */,
+				C77A98B620887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m in Sources */,
 				C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */,
+				C77A98BC20887EBB00840186 /* InterstitialViewController.m in Sources */,
 				C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */,
-				C72AD3E11FD915E30000ADDA /* PlayableAdMobAdapter.m in Sources */,
+				C72AD3E11FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,14 +382,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CLYVY7K3D3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VG25A6M88T;
 				INFOPLIST_FILE = PlayableAdMobDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableAdMobDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "a0f49df3-171d-4535-b30a-dd800ef8f012";
+				PROVISIONING_PROFILE_SPECIFIER = wanghaiyingDev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -381,15 +400,17 @@
 			baseConfigurationReference = ED5DDB74ABB6C7D2037F165D /* Pods-PlayableAdMobDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CLYVY7K3D3;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L5UE3EGW93;
 				INFOPLIST_FILE = PlayableAdMobDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableAdMobDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "9f445f8f-ab1c-4958-b506-0257824d3d39";
+				PROVISIONING_PROFILE_SPECIFIER = "Dis-zplay*";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
