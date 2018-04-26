@@ -11,8 +11,7 @@ pod 'PlayableAds', '~>2.0.5'
 ```
 如下所示
 ![image](imgs/image01.png)
-3. 执行```pod install --repo-update``` 看到如下信息证明安装完成
-![image](imgs/image02.png)
+3. 执行```pod install --repo-update``` 安装依赖库
 ## 二 在AdMob平台添加ZPLAY Ads广告广告源
 
 #### 1. 添加新应用
