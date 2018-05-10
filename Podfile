@@ -11,6 +11,6 @@ target 'PlayableAdMobDemo' do
   pod ‘Google-Mobile-Ads-SDK’
 
   # PlayableAd library
-  pod 'PlayableAds', '~>2.0.5'
+  pod 'PlayableAds', '~>2.0.6'
 
 end
