@@ -62,34 +62,19 @@ static NSString *const customEventErrorDomain = @"com.google.CustomEvent";
 }
 
 - (void)playableAdsDidStartPlaying:(PlayableAds *)ads {
+    [self.delegate customEventInterstitialWillPresent:self];
     NSLog(@"zp=> adapterDidStartPlayingRewardBasedVideoAd");
-}
-
-- (void)playableAdsWillPresentScreen:(PlayableAds *)ads {
-     [self.delegate customEventInterstitialWillPresent:self];
-    NSLog(@"zp=> adapterDidOpenRewardBasedVideoAd");
 }
 
 - (void)playableAdsDidEndPlaying:(PlayableAds *)ads {
 }
 
-- (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
-    [self.delegate customEventInterstitialWillDismiss:self];
-    NSLog(@"zp=> adapterDidCloseRewardBasedVideoAd");
+- (void)playableAdsDidPresentLandingPage:(PlayableAds *)ads{
+    
 }
 
-- (void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
+- (void)playableAdsDidClick:(PlayableAds *)ads{
     [self.delegate customEventInterstitialWasClicked:self];
-    NSLog(@"zp=> adapterDidGetAdClick");
-}
-
-- (void)playableAdsWillLeaveApplication:(PlayableAds *)ads {
-    NSLog(@"zp=> adapterWillLeaveApplication");
-    [self.delegate customEventInterstitialWillLeaveApplication:self];
-}
-
-- (void)playableAdsDidClickFromVideoPage:(PlayableAds *)ads {
-     [self.delegate customEventInterstitialWasClicked:self];
 }
 
 @end
