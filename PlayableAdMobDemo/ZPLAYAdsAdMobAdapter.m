@@ -83,30 +83,22 @@
 }
 
 - (void)playableAdsDidStartPlaying:(PlayableAds *)ads {
+    [_rewardedConnector adapterDidOpenRewardBasedVideoAd:self];
     [_rewardedConnector adapterDidStartPlayingRewardBasedVideoAd:self];
     NSLog(@"zp=> adapterDidStartPlayingRewardBasedVideoAd");
 }
 
-- (void)playableAdsWillPresentScreen:(PlayableAds *)ads {
-     [_rewardedConnector adapterDidOpenRewardBasedVideoAd:self];
-    NSLog(@"zp=> adapterDidOpenRewardBasedVideoAd");
-}
-
 - (void)playableAdsDidEndPlaying:(PlayableAds *)ads {
+    NSLog(@"zp=> playableAdsDidEndPlaying");
 }
 
-- (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
-}
-
-- (void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
+- (void)playableAdsDidClick:(PlayableAds *)ads{
     [_rewardedConnector adapterDidGetAdClick:self];
-    NSLog(@"zp=> adapterDidGetAdClick");
+    NSLog(@"zp=> playableAdsDidClick");
 }
 
-- (void)playableAdsWillLeaveApplication:(PlayableAds *)ads {
-    [_rewardedConnector adapterWillLeaveApplication:self];
-    NSLog(@"zp=> adapterWillLeaveApplication");
+- (void)playableAdsDidPresentLandingPage:(PlayableAds *)ads{
+    NSLog(@"zp=> playableAdsDidPresentLandingPage");
 }
-
 
 @end
