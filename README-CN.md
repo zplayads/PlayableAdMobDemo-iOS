@@ -7,7 +7,7 @@
 pod ‘Google-Mobile-Ads-SDK’
 
 # PlayableAd library
-pod 'PlayableAds', '~>2.0.5'
+pod 'PlayableAds', '~>2.0.6'
 ```
 如下所示
 ![image](imgs/image01.png)
@@ -76,10 +76,10 @@ g. 对ZPLAY Ads广告源进行配置，这里Class Name必须与写入项目中�
 
 注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您申请的正式ID。
 
-|操作系统|广告形式|  App_ID  |  Ad_Unit_id|
-|--------|----|----------|------------|
-|iOS|激励视频|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
-|iOS|插屏|A650AB0D-7BFC-2A81-3066-D3170947C3DA|0868EBC0-7768-40CA-4226-F9924221C8EB|
+| 操作系统 | 广告形式 | App_ID                               | Ad_Unit_id                           |
+| ---- | ---- | ------------------------------------ | ------------------------------------ |
+| iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
 
 h. Ad source列表中可以看到所设置的广告源ZPLAY Ads，点击“SAVE”完成Mediation的配置
 
