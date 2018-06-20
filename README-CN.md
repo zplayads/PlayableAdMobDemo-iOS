@@ -7,7 +7,7 @@
 pod ‘Google-Mobile-Ads-SDK’
 
 # PlayableAd library
-pod 'PlayableAds', '~>2.0.7'
+pod 'PlayableAds', '~>2.0.8'
 ```
 如下所示
 ![image](imgs/image01.png)
