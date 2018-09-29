@@ -1,6 +1,6 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.32.0)
-  - PlayableAds (2.1.0)
+  - Google-Mobile-Ads-SDK (7.34.0)
+  - PlayableAds (2.2.0)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
@@ -12,8 +12,8 @@ SPEC REPOS:
     - PlayableAds
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: 2aca87e46e860f1e1fc0fdc1201dd9caa4be9ba6
-  PlayableAds: 918ce69bfa751626d68ced8ecd58b8f6e931a986
+  Google-Mobile-Ads-SDK: a1cbce28c0c78ca1fb0b6c4f213485f55527c99f
+  PlayableAds: 45a568dd11115e2e04ee381ac1a3717d54132c7e
 
 PODFILE CHECKSUM: c85f3d14d6149c8886a000502d17e066a80996f0
 
