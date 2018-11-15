@@ -70,8 +70,7 @@ f. 输入第三方广告源名称，此处以ZPLAY Ads为例，可根据需求�
 
 ![img](imgs/013mediationgroupcreate6.png)
 
-g. 对ZPLAY Ads广告源进行配置，这里Class Name必须与写入项目中的文件名一致，以Demo为例，这里填写PlayableAdMobAdapter（可自定义，如果没有特殊需要就与示例程序一致即可）。Parameter第一个值为ZPLAY Ads平台申请的应用ID，第二个值为ZPLAY Ads平台申请的广告位ID，注意这两个值的顺序不能更改，且之间只有一个空格，点击“DONE”完成ZPLAY Ads的配置
-
+g. 对ZPLAY Ads广告源进行配置，在Class Name处输入适配类名称，即将下图中ZPLAYAds替换为适配器类全称（**包名+类名**），如示例中激励视频为```com.zplay.playable.playableadmobdemo.ZPLAYAdsAdMobAdapter```，插屏广告为```com.zplay.playable.playableadmobdemo.ZPLAYAdsAdMobInterstitialAdapter```，Parameter第一个值为ZPLAY Ads平台申请的应用ID，第二个值为ZPLAY Ads平台申请的广告位ID，注意这两个值的顺序不能更改，且之间只有一个空格，点击“DONE”完成ZPLAY Ads的配置
 ![img](imgs/014mediationgroupcreate7.png)
 
 注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您申请的正式ID。
