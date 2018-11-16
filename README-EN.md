@@ -67,7 +67,7 @@ e. Click "ADD CUSTOM EVENT" to add custom ad sources.
 f. Enter label of third party ad source, you can customize it according to your requirements. Here takes ZPLAY Ads as an example. Then you can set eCPM according to your requirements. 
 ![img](imgs/013mediationgroupcreate6.png)
 
-g. Configure ZPLAY Ads ad source. Fill in adapter name in Class Name, which means replace ZPLAYAds (as following image shows) with full name of adapter name(**bundle name+class name**) . As for the example, the Rewarded's adapter name is ```com.zplay.playable.playableadmobdemo.ZPLAYAdsAdMobAdapter```, and the Interstitial's adapter name is ```com.zplay.playable.playableadmobdemo.ZPLAYAdsAdMobInterstitialAdapter```. Parameter contains two values, the first value is App ID which applied in ZPLAY Ads, and the second value is Ad Unit ID which applied in ZPLAY Ads. Please note that the sequence of two values should not be changed, and there is only one blank between two values. Click "DONE" to accomplish configuration. 
+g. Configure ZPLAY Ads ad source. Input adapter name to Class Name, which means replace ZPLAYAds (as following image shows) with adapter name . As for the example, the Rewarded's adapter name is ```ZPLAYAdsAdMobAdapter``` , and the Interstitial's adapter name is ```ZPLAYAdsAdMobInterstitialAdapter``` . Parameter contains two values, the first value is App ID and the second value is Ad Unit ID, both of them are applied in ZPLAY Ads. Please note that the sequence of two values should not be changed, and there is only one blank between two values. Click "DONE" to accomplish configuration.
 ![img](imgs/014mediationgroupcreate7.png)
 
 Note: You are available to use the following ID when testing(not charge). Please switch to the ID you applied in production mode.
