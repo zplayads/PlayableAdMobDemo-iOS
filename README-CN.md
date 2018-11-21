@@ -12,6 +12,7 @@ pod 'PlayableAds'
 如下所示
 ![image](imgs/image01.png)
 3. 执行```pod install --repo-update``` 安装依赖库
+
 ## 二 在AdMob平台添加ZPLAY Ads广告广告源
 
 #### 1. 添加新应用
@@ -50,7 +51,7 @@ a. 进入Mediation目录，选择“CREATE MEDIATION GROUP”
 
 ![img](imgs/007mediationgroupcreate.png)
 
-b. 选择您要使用的广告形式及操作系统，ZPLAY Ads目前支持Interstitial及Rewarded，此处以Rewarded为例，点击“CONTINUE”进入下一步
+b. 选择您要使用的广告形式及操作系统，ZPLAY Ads目前支持Interstitial及Rewarded video，此处以Rewarded video为例，点击“CONTINUE”进入下一步
 
 ![img](imgs/008mediationgroupcreate1.png)
 
@@ -66,12 +67,11 @@ e. 点击“ADD CUSTOM EVENT”添加自定义广告源
 
 ![img](imgs/012mediationgroupcreate5.png)
 
-f. 输入第三方广告源名称，此处以ZPLAY Ads为例，可根据需求进行自定义，根据需要对第三方广告源进行价格设置
+f. 输入第三方广告源名称，此处以ZPLAYAds为例，可根据需求进行自定义，根据需要对第三方广告源进行价格设置
 
 ![img](imgs/013mediationgroupcreate6.png)
 
-g. 对ZPLAY Ads广告源进行配置，这里Class Name必须与写入项目中的文件名一致，以Demo为例，这里填写PlayableAdMobAdapter（可自定义，如果没有特殊需要就与示例程序一致即可）。Parameter第一个值为ZPLAY Ads平台申请的应用ID，第二个值为ZPLAY Ads平台申请的广告位ID，注意这两个值的顺序不能更改，且之间只有一个空格，点击“DONE”完成ZPLAY Ads的配置
-
+g.  对ZPLAY Ads广告源进行配置，在Class Name处（如下图所示）输入适配类名称，即将下图中ZPLAYAds替换为适配器类名称。ZPLAY Ads插屏适配器为ZPLAYAdsAdMobInterstitialAdapter，ZPLAY Ads激励视频适配器为ZPLAYAdsAdMobAdapter。Parameter中第一个值需填写ZPLAY Ads平台申请的应用ID，第二个值须填写ZPLAY Ads平台申请的广告位ID，注意这两个值的顺序不能更改，且两参数间只有一个空格，点击“DONE”完成ZPLAY Ads的配置
 ![img](imgs/014mediationgroupcreate7.png)
 
 注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您申请的正式ID。
