@@ -5,10 +5,6 @@ target 'PlayableAdMobDemo' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
   # Pods for PlayableAdMobDemo
-
-  # AdMob library
-  pod ‘Google-Mobile-Ads-SDK’
-  # PlayableAd library
-  pod 'PlayableAds'
+  pod 'GoogleMobileAdsMediationZplayAds'
 
 end
