@@ -14,8 +14,6 @@
 		C72AD3D31FD8E6CA0000ADDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */; };
 		C72AD3D61FD8E6CA0000ADDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */; };
 		C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3D81FD8E6CA0000ADDA /* main.m */; };
-		C72AD3E11FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */; };
-		C77A98B620887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98B520887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m */; };
 		C77A98B920887E8400840186 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98B820887E8400840186 /* MainViewController.m */; };
 		C77A98BC20887EBB00840186 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98BB20887EBB00840186 /* InterstitialViewController.m */; };
 /* End PBXBuildFile section */
@@ -33,10 +31,6 @@
 		C72AD3D51FD8E6CA0000ADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C72AD3D71FD8E6CA0000ADDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C72AD3D81FD8E6CA0000ADDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C72AD3DF1FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLAYAdsAdMobAdapter.h; sourceTree = "<group>"; };
-		C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPLAYAdsAdMobAdapter.m; sourceTree = "<group>"; };
-		C77A98B420887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLAYAdsAdMobInterstitialAdapter.h; sourceTree = "<group>"; };
-		C77A98B520887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPLAYAdsAdMobInterstitialAdapter.m; sourceTree = "<group>"; };
 		C77A98B720887E8400840186 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C77A98B820887E8400840186 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C77A98BA20887EBB00840186 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
@@ -94,10 +88,6 @@
 				C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */,
 				C77A98BA20887EBB00840186 /* InterstitialViewController.h */,
 				C77A98BB20887EBB00840186 /* InterstitialViewController.m */,
-				C72AD3DF1FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.h */,
-				C72AD3E01FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m */,
-				C77A98B420887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.h */,
-				C77A98B520887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m */,
 				C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */,
 				C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */,
 				C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */,
@@ -229,11 +219,9 @@
 			files = (
 				C72AD3CE1FD8E6CA0000ADDA /* RewardedVideoViewController.m in Sources */,
 				C77A98B920887E8400840186 /* MainViewController.m in Sources */,
-				C77A98B620887CB900840186 /* ZPLAYAdsAdMobInterstitialAdapter.m in Sources */,
 				C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */,
 				C77A98BC20887EBB00840186 /* InterstitialViewController.m in Sources */,
 				C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */,
-				C72AD3E11FD915E30000ADDA /* ZPLAYAdsAdMobAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
