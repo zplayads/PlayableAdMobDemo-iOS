@@ -5,11 +5,7 @@ a. Execute ```pod init``` under project terminal.
 
 b. Edit Podfile, and add library
 ```
-# AdMob library
-pod ‘Google-Mobile-Ads-SDK’
-
-# PlayableAd library
-pod 'PlayableAds'
+pod 'GoogleMobileAdsMediationZplayAds'
 ```
 
 As follows
