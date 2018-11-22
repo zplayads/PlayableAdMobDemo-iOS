@@ -1,15 +1,20 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.26.0)
-  - PlayableAds (2.0.5)
+  - Google-Mobile-Ads-SDK (7.34.0)
+  - PlayableAds (2.2.0)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
-  - PlayableAds (~> 2.0.5)
+  - PlayableAds
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Google-Mobile-Ads-SDK
+    - PlayableAds
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: 22d4a6fe18d526adcc12a86d8cc2d53872700966
-  PlayableAds: 58ab7a6918c378e5309be4a40ffc796a82d8aae7
+  Google-Mobile-Ads-SDK: a1cbce28c0c78ca1fb0b6c4f213485f55527c99f
+  PlayableAds: 45a568dd11115e2e04ee381ac1a3717d54132c7e
 
-PODFILE CHECKSUM: 0ff6ee0a31a7281ca14134e6f2064c6787831cb3
+PODFILE CHECKSUM: c85f3d14d6149c8886a000502d17e066a80996f0
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
