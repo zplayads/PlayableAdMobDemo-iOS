@@ -30,7 +30,7 @@ c. Execute `pod install --repo-update` to install dependent libraries.
 a. Click "Apps" in the menu bar, and then click "ADD APP" button. 
 ![image](imgs/018addapp1.png)
 
-b. Choose whether your app has published in Google Play or App Store. if your App has been published in Google Play or App Store, choose "YES", otherwise choose "NO", here take unpublished as an example.
+b. Choose whether your app has published in Google Play or App Store. If your App has been published in Google Play or App Store, choose "YES", otherwise choose "NO", here take unpublished as an example.
 ![image](imgs/018addapp2.png)
 
 c. Enter your app information and choose a platform, and click "ADD" to add an app.
