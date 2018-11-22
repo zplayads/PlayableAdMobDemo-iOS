@@ -3,14 +3,11 @@
 1. 在项目终端下执行```pod init```
 2. 编辑Podfile，添加库
 ```
-# AdMob library
-pod ‘Google-Mobile-Ads-SDK’
-
-# PlayableAd library
-pod 'PlayableAds'
+pod 'GoogleMobileAdsMediationZplayAds'
 ```
 如下所示
 ![image](imgs/image01.png)
+
 3. 执行```pod install --repo-update``` 安装依赖库
 
 ## 二 在AdMob平台添加ZPLAY Ads广告广告源
