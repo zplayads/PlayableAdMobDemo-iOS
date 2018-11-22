@@ -1,8 +1,8 @@
 - [1 Integrate ZPLAY Ads SDK and AdMob SDK](#1-integrate-zplay-ads-sdk-and-admob-sdk)
 - [2 Add ZPLAY Ads as a New Network on AdMob](#2-add-zplay-ads-as-a-new-network-on-admob)
-                - [2.1 Add New App](#21-add-new-app)
-                - [2.2 Add New Ad Unit](#22-add-new-ad-unit)
-                - [2.3 Add ZPLAY Ads as a New Network on AdMob](#23-add-zplay-ads-as-a-new-network-on-admob)
+     - [2.1 Add New App](#21-add-new-app)
+     - [2.2 Add New Ad Unit](#22-add-new-ad-unit)
+     - [2.3 Add ZPLAY Ads as a New Network on AdMob](#23-add-zplay-ads-as-a-new-network-on-admob)
 
 ## 1 Integrate ZPLAY Ads SDK and AdMob SDK
 
