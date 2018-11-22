@@ -5,7 +5,7 @@
         - [2.3 添加ZPLAY Ads广告源](#23-%E6%B7%BB%E5%8A%A0zplay-ads%E5%B9%BF%E5%91%8A%E6%BA%90)
 
 ## 1 接入ZPLAY Ads SDK和AdMob SDK
-以cocoapods为例，若使用其他接入方式请查看[ZPLAY Ads广告接入文档2.2部分](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-CN.md#22-%E6%89%8B%E5%8A%A8%E9%9B%86%E6%88%90zplay-ads-sdk)和[AdMob SDK接入文档](https://developers.google.com/admob/android/quick-start)，以下为简要步骤
+以cocoapods为例，若使用其他接入方式请查看[ZPLAY Ads广告接入文档2.2部分](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-CN.md#22-%E6%89%8B%E5%8A%A8%E9%9B%86%E6%88%90zplay-ads-sdk)和[AdMob SDK接入文档](https://developers.google.com/admob/ios/quick-start)，以下为简要步骤
 1. 在项目终端下执行`pod init`
 2. 编辑Podfile，添加库
 ```
