@@ -17,6 +17,8 @@ pod 'GoogleMobileAdsMediationZplayAds'
 
 3. 执行`pod install --repo-update` 安装依赖库
 
+> 如果您想了解关于适配器和广告请求的更多详细内容，请参考DEMO中的代码示例。
+
 ## 2 在[AdMob](https://apps.admob.com/v2/home)平台添加ZPLAY Ads广告广告源
 
 #### 2.1 添加新应用
