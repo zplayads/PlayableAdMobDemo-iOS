@@ -74,7 +74,7 @@ f. 输入第三方广告源名称，此处以ZPLAYAds为例，可根据需求进
 g.  对ZPLAY Ads广告源进行配置，将适配器名称填在Class Name（如下图所示,图片中的类名只是一个示例，请使用以下适配器名称），ZPLAY Ads插屏适配器为ZPLAYAdsAdMobInterstitialAdapter，激励视频适配器为ZPLAYAdsAdMobAdapter。Parameter中需填写[应用ID](https://sellers.zplayads.com/#/app/appList/)和[广告位ID](https://sellers.zplayads.com/#/ad/placeList/)两个参数，通过空格区分且顺序不可更改，点击“DONE”完成ZPLAY Ads的配置
 ![img](imgs/014mediationgroupcreate7.png)
 
-注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您申请的正式ID。
+注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您在[ZPLAY Ads](https://sellers.zplayads.com/)申请的正式ID。
 
 | 操作系统 | 广告形式 | App_ID                               | Ad_Unit_id                           |
 | ---- | ---- | ------------------------------------ | ------------------------------------ |
