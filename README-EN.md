@@ -11,8 +11,7 @@ Using cocoapods as an example, here is some major steps. If you use other integr
 a. Execute `pod init` under project terminal.
 
 b. Edit Podfile, and add library
-
-```objective-c
+```object-c
 pod 'GoogleMobileAdsMediationZplayAds'
 ```
 As following screenshot shows
