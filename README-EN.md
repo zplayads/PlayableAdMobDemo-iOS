@@ -20,7 +20,7 @@ As following screenshot shows
 
 c. Execute `pod install --repo-update` to install dependent libraries.
 
-> If you want to know more about Adapter and Request, please refer to the code sample in DEMO.
+> If you want to know more about Adapter and Request, please refer to the code sample in [DEMO](https://github.com/zplayads/PlayableAdMobDemo-iOS/tree/master/PlayableAdMobDemo).
 
 ## 2 Add ZPLAY Ads as a New Network on [AdMob](https://apps.admob.com/v2/home)
 
