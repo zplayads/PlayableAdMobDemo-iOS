@@ -54,7 +54,7 @@ a. 进入[Mediation目录](https://apps.admob.com/v2/mediation/groups/list)，�
 
 ![img](imgs/007mediationgroupcreate.png)
 
-b. 选择您要使用的广告形式及操作系统，ZPLAY Ads目前支持Interstitial及Rewarded video，此处以Rewarded video为例，点击“CONTINUE”进入下一步
+b. 选择您要使用的广告形式及操作系统，ZPLAY Ads目前支持Interstitial及Rewarded，此处以Rewarded为例，点击“CONTINUE”进入下一步
 
 ![img](imgs/008mediationgroupcreate1.png)
 
