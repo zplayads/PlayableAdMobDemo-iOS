@@ -26,7 +26,7 @@ pod 'GoogleMobileAdsMediationZplayAds'
 a. 选择目录中Apps，点击“ADD APP”按钮
 ![image](imgs/018addapp1.png)
 
-b. 选择您的应用是否已经上架Googleplay或AppStore，若已经上架Googleplay或AppStore请选择“YES”，若未上架请选择“NO”，以下以未上架为例
+b. 选择您的应用是否已经上架Google Play或AppStore，若已经上架Google Play或AppStore请选择“YES”，若未上架请选择“NO”，以下以未上架为例
 ![image](imgs/018addapp2.png)
 
 c. 输入应用名称，选择应用操作系统，点击“ADD”保存添加的应用

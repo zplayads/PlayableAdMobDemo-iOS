@@ -53,7 +53,7 @@ d. Get app ID and ad unit ID of this ad unit. Click "DONE" to accomplish ad unit
 a. Choose "Mediation" in the menu bar, and click "CREATE MEDIATION GROUP" button.
 ![img](imgs/007mediationgroupcreate.png)
 
-b. Choose ad format and platform. ZPLAY Ads supports Interstitial and Rewarded video now. Here take Rewarded video as an example. Click "CONTINUE" button to go on. 
+b. Choose ad format and platform. ZPLAY Ads supports Interstitial and Rewarded now. Here take Rewarded as an example. Click "CONTINUE" button to go on. 
 ![img](imgs/008mediationgroupcreate1.png)
 
 c. Fill in the name of Mediation and select locations to target. Mediation is only available when the status is Enabled, please make sure that status is Enabled. Click "ADD AD UNITS" to choose ad unit. 
