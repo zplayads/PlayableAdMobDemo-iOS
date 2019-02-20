@@ -1,9 +1,9 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.36.0)
-  - GoogleMobileAdsMediationZplayAds (2.2.0.0):
+  - Google-Mobile-Ads-SDK (7.39.0)
+  - GoogleMobileAdsMediationZplayAds (2.4.0.0):
     - Google-Mobile-Ads-SDK
-    - PlayableAds (~> 2.2.0)
-  - PlayableAds (2.2.0)
+    - PlayableAds (~> 2.4.0)
+  - PlayableAds (2.4.0)
 
 DEPENDENCIES:
   - GoogleMobileAdsMediationZplayAds
@@ -15,10 +15,10 @@ SPEC REPOS:
     - PlayableAds
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: 5bb4d2cea811842e104a24780caef63b4808e1bd
-  GoogleMobileAdsMediationZplayAds: e23d3e659c53bb1317cd34496879a5da31fc6c95
-  PlayableAds: 06355fd0fbd189fc59b5f9d06d3961b47cbe243e
+  Google-Mobile-Ads-SDK: d0f10a7c4d7015db23075ff316602350d12049db
+  GoogleMobileAdsMediationZplayAds: a7bc4f9fe03734fa3aff3354177f365afbb3af18
+  PlayableAds: 916e7f9f51a8944769abc45d3b4358f844f19033
 
-PODFILE CHECKSUM: a1dfa8281ff28cc969be5547885dcd20f8e70e90
+PODFILE CHECKSUM: 8d169989987d5f7dc84eafc065b3ca9d3981d1e5
 
 COCOAPODS: 1.5.3
