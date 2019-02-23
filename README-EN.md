@@ -3,6 +3,8 @@
      - [2.1 Add New App](#21-add-new-app)
      - [2.2 Add New Ad Unit](#22-add-new-ad-unit)
      - [2.3 Add ZPLAY Ads as a New Network on AdMob](#23-add-zplay-ads-as-a-new-network-on-admob)
+- [3 Test](#3-Test)
+
 
 ## 1 Integrate ZPLAY Ads SDK and AdMob SDK
 
@@ -85,5 +87,11 @@ i. Check whether third-party ad source has been added successfully. In the Apps 
 ![img](imgs/016mediationgroupcreate9.png)
 
 
+## 3 Test
 
+You are available to use the following ID when testing your App (no charge). Please replace them with the ID you applied in [ZPLAY Ads](https://sellers.zplayads.com/) when you publish your App.
 
+| OS  | Ad Format    | App_ID                               | Ad_Unit_id                           |
+| --- | ------------ | ------------------------------------ | ------------------------------------ |
+| iOS | Rewarded     | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS | Interstitial | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
