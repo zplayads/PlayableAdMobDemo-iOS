@@ -3,6 +3,8 @@
      - [2.1 添加新应用](#21-%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%BA%94%E7%94%A8)
      - [2.2 添加新广告位](#22-%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%B9%BF%E5%91%8A%E4%BD%8D)
      - [2.3 添加ZPLAY Ads广告源](#23-%E6%B7%BB%E5%8A%A0zplay-ads%E5%B9%BF%E5%91%8A%E6%BA%90)
+- [3 测试](#3-测试)
+
 
 ## 1 接入ZPLAY Ads SDK和AdMob SDK
 以cocoapods为例，若使用其他接入方式请查看[ZPLAY Ads广告接入文档2.2部分](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-CN.md#22-%E6%89%8B%E5%8A%A8%E9%9B%86%E6%88%90zplay-ads-sdk)和[AdMob SDK接入文档](https://developers.google.com/admob/ios/quick-start)，以下为简要步骤
@@ -91,3 +93,12 @@ h. Ad source列表中可以看到所设置的广告源ZPLAY Ads，点击“SAVE�
 i. 检查第三方广告源是否添加完成，在[Apps列表](https://apps.admob.com/v2/apps/list)中找到步骤d中选择的应用及广告位，广告位Mediation groups中active数量增加表示广告源添加成功
 
 ![img](imgs/016mediationgroupcreate9.png)
+
+## 3 测试
+
+您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您在[ZPLAY Ads](https://sellers.zplayads.com/)申请的正式ID。
+
+| 操作系统 | 广告形式 | App_ID                               | Ad_Unit_id                           |
+| ---- | ---- | ------------------------------------ | ------------------------------------ |
+| iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
