@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54ECA882011A1FBCEDDC61E3 /* libPods-PlayableAdMobDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */; };
+		5B40E6092369442900F9590F /* ZplayAdsAdMobBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E6082369442900F9590F /* ZplayAdsAdMobBannerAdapter.m */; };
 		5B43352D2369377600AD7B57 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B43352C2369377600AD7B57 /* BannerViewController.m */; };
 		C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */; };
 		C72AD3CE1FD8E6CA0000ADDA /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */; };
@@ -21,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		55A1A6376D176D558A02BF05 /* Pods-PlayableAdMobDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableAdMobDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5B40E6072369442900F9590F /* ZplayAdsAdMobBannerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZplayAdsAdMobBannerAdapter.h; sourceTree = "<group>"; };
+		5B40E6082369442900F9590F /* ZplayAdsAdMobBannerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZplayAdsAdMobBannerAdapter.m; sourceTree = "<group>"; };
 		5B43352B2369377600AD7B57 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		5B43352C2369377600AD7B57 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayableAdMobDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +96,8 @@
 				C77A98BB20887EBB00840186 /* InterstitialViewController.m */,
 				5B43352B2369377600AD7B57 /* BannerViewController.h */,
 				5B43352C2369377600AD7B57 /* BannerViewController.m */,
+				5B40E6072369442900F9590F /* ZplayAdsAdMobBannerAdapter.h */,
+				5B40E6082369442900F9590F /* ZplayAdsAdMobBannerAdapter.m */,
 				C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */,
 				C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */,
 				C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */,
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C72AD3CE1FD8E6CA0000ADDA /* RewardedVideoViewController.m in Sources */,
+				5B40E6092369442900F9590F /* ZplayAdsAdMobBannerAdapter.m in Sources */,
 				C77A98B920887E8400840186 /* MainViewController.m in Sources */,
 				5B43352D2369377600AD7B57 /* BannerViewController.m in Sources */,
 				C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */,
