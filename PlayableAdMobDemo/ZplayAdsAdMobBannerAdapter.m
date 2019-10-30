@@ -42,6 +42,8 @@
 
 /// Tells the delegate that a request failed.
 - (void)atmosplayAdsBannerView:(AtmosplayAdsBanner *)bannerView didFailWithError:(NSError *)error {
+    self.bannerView.delegate = nil;
+    self.bannerView = nil;
     [self.delegate customEventBanner:self didFailAd:error];
 }
 
