@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GoogleMobileAds/GADMobileAds.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZplayAdsAdMobBannerAdapter : NSObject
+@interface ZplayAdsAdMobBannerAdapter : NSObject <GADCustomEventBanner>
 
 @end
 
