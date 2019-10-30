@@ -8,30 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		54ECA882011A1FBCEDDC61E3 /* libPods-PlayableAdMobDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */; };
-		5B40E6092369442900F9590F /* ZplayAdsAdMobBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E6082369442900F9590F /* ZplayAdsAdMobBannerAdapter.m */; };
-		5B43352D2369377600AD7B57 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B43352C2369377600AD7B57 /* BannerViewController.m */; };
+		5B40FDCA2369745E002116BA /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FDC22369745E002116BA /* RewardedVideoViewController.m */; };
+		5B40FDCB2369745E002116BA /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FDC42369745E002116BA /* InterstitialViewController.m */; };
+		5B40FDCC2369745E002116BA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FDC62369745E002116BA /* BannerViewController.m */; };
+		5B40FDCD2369745E002116BA /* ZplayAdsAdMobBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FDC72369745E002116BA /* ZplayAdsAdMobBannerAdapter.m */; };
 		C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */; };
-		C72AD3CE1FD8E6CA0000ADDA /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */; };
 		C72AD3D11FD8E6CA0000ADDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */; };
 		C72AD3D31FD8E6CA0000ADDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */; };
 		C72AD3D61FD8E6CA0000ADDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */; };
 		C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3D81FD8E6CA0000ADDA /* main.m */; };
 		C77A98B920887E8400840186 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98B820887E8400840186 /* MainViewController.m */; };
-		C77A98BC20887EBB00840186 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A98BB20887EBB00840186 /* InterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55A1A6376D176D558A02BF05 /* Pods-PlayableAdMobDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableAdMobDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5B40E6072369442900F9590F /* ZplayAdsAdMobBannerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZplayAdsAdMobBannerAdapter.h; sourceTree = "<group>"; };
-		5B40E6082369442900F9590F /* ZplayAdsAdMobBannerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZplayAdsAdMobBannerAdapter.m; sourceTree = "<group>"; };
-		5B43352B2369377600AD7B57 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
-		5B43352C2369377600AD7B57 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		5B40FDC22369745E002116BA /* RewardedVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardedVideoViewController.m; sourceTree = "<group>"; };
+		5B40FDC32369745E002116BA /* RewardedVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardedVideoViewController.h; sourceTree = "<group>"; };
+		5B40FDC42369745E002116BA /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		5B40FDC52369745E002116BA /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		5B40FDC62369745E002116BA /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		5B40FDC72369745E002116BA /* ZplayAdsAdMobBannerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZplayAdsAdMobBannerAdapter.m; sourceTree = "<group>"; };
+		5B40FDC82369745E002116BA /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		5B40FDC92369745E002116BA /* ZplayAdsAdMobBannerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZplayAdsAdMobBannerAdapter.h; sourceTree = "<group>"; };
 		5B7D90506701616292AF5305 /* libPods-PlayableAdMobDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayableAdMobDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72AD3C61FD8E6CA0000ADDA /* PlayableAdMobDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayableAdMobDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72AD3C91FD8E6CA0000ADDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C72AD3CC1FD8E6CA0000ADDA /* RewardedVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedVideoViewController.h; sourceTree = "<group>"; };
-		C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedVideoViewController.m; sourceTree = "<group>"; };
 		C72AD3D01FD8E6CA0000ADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C72AD3D51FD8E6CA0000ADDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,8 +41,6 @@
 		C72AD3D81FD8E6CA0000ADDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C77A98B720887E8400840186 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C77A98B820887E8400840186 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		C77A98BA20887EBB00840186 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
-		C77A98BB20887EBB00840186 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
 		ED5DDB74ABB6C7D2037F165D /* Pods-PlayableAdMobDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableAdMobDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableAdMobDemo/Pods-PlayableAdMobDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,18 +86,18 @@
 		C72AD3C81FD8E6CA0000ADDA /* PlayableAdMobDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B40FDC52369745E002116BA /* BannerViewController.h */,
+				5B40FDC62369745E002116BA /* BannerViewController.m */,
+				5B40FDC82369745E002116BA /* InterstitialViewController.h */,
+				5B40FDC42369745E002116BA /* InterstitialViewController.m */,
+				5B40FDC32369745E002116BA /* RewardedVideoViewController.h */,
+				5B40FDC22369745E002116BA /* RewardedVideoViewController.m */,
+				5B40FDC92369745E002116BA /* ZplayAdsAdMobBannerAdapter.h */,
+				5B40FDC72369745E002116BA /* ZplayAdsAdMobBannerAdapter.m */,
 				C72AD3C91FD8E6CA0000ADDA /* AppDelegate.h */,
 				C72AD3CA1FD8E6CA0000ADDA /* AppDelegate.m */,
 				C77A98B720887E8400840186 /* MainViewController.h */,
 				C77A98B820887E8400840186 /* MainViewController.m */,
-				C72AD3CC1FD8E6CA0000ADDA /* RewardedVideoViewController.h */,
-				C72AD3CD1FD8E6CA0000ADDA /* RewardedVideoViewController.m */,
-				C77A98BA20887EBB00840186 /* InterstitialViewController.h */,
-				C77A98BB20887EBB00840186 /* InterstitialViewController.m */,
-				5B43352B2369377600AD7B57 /* BannerViewController.h */,
-				5B43352C2369377600AD7B57 /* BannerViewController.m */,
-				5B40E6072369442900F9590F /* ZplayAdsAdMobBannerAdapter.h */,
-				5B40E6082369442900F9590F /* ZplayAdsAdMobBannerAdapter.m */,
 				C72AD3CF1FD8E6CA0000ADDA /* Main.storyboard */,
 				C72AD3D21FD8E6CA0000ADDA /* Assets.xcassets */,
 				C72AD3D41FD8E6CA0000ADDA /* LaunchScreen.storyboard */,
@@ -126,7 +126,7 @@
 				C72AD3C21FD8E6CA0000ADDA /* Sources */,
 				C72AD3C31FD8E6CA0000ADDA /* Frameworks */,
 				C72AD3C41FD8E6CA0000ADDA /* Resources */,
-				DE4D58205DED88B20B36816C /* [CP] Copy Pods Resources */,
+				7A3DA9A2D6BE6C2A0399DAB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,7 +202,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE4D58205DED88B20B36816C /* [CP] Copy Pods Resources */ = {
+		7A3DA9A2D6BE6C2A0399DAB7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,12 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72AD3CE1FD8E6CA0000ADDA /* RewardedVideoViewController.m in Sources */,
-				5B40E6092369442900F9590F /* ZplayAdsAdMobBannerAdapter.m in Sources */,
+				5B40FDCA2369745E002116BA /* RewardedVideoViewController.m in Sources */,
+				5B40FDCD2369745E002116BA /* ZplayAdsAdMobBannerAdapter.m in Sources */,
 				C77A98B920887E8400840186 /* MainViewController.m in Sources */,
-				5B43352D2369377600AD7B57 /* BannerViewController.m in Sources */,
+				5B40FDCC2369745E002116BA /* BannerViewController.m in Sources */,
+				5B40FDCB2369745E002116BA /* InterstitialViewController.m in Sources */,
 				C72AD3D91FD8E6CA0000ADDA /* main.m in Sources */,
-				C77A98BC20887EBB00840186 /* InterstitialViewController.m in Sources */,
 				C72AD3CB1FD8E6CA0000ADDA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,14 +371,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VG25A6M88T;
+				DEVELOPMENT_TEAM = QX37QM2334;
 				INFOPLIST_FILE = PlayableAdMobDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableAdMobDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a0f49df3-171d-4535-b30a-dd800ef8f012";
-				PROVISIONING_PROFILE_SPECIFIER = wanghaiyingDev;
+				PROVISIONING_PROFILE_SPECIFIER = zplay;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
