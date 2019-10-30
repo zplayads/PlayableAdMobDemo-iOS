@@ -31,6 +31,17 @@
 
     self.bannerView = [[AtmosplayAdsBanner alloc] initWithAdUnitID:AdUnitID appID:AppID rootViewController:[self.delegate viewControllerForPresentingModalView]];
     self.bannerView.delegate = self;
+    
+    if (GADAdSizeEqualToSize(adSize, kGADAdSizeBanner)) {
+        self.bannerView.bannerSize = kAtmosplayAdsBanner320x50;
+    } else if (GADAdSizeEqualToSize(adSize, kGADAdSizeLeaderboard)) {
+        self.bannerView.bannerSize = kAtmosplayAdsBanner728x90;
+    } else if (GADAdSizeEqualToSize(adSize, kGADAdSizeSmartBannerPortrait)) {
+        self.bannerView.bannerSize = kAtmosplayAdsSmartBannerPortrait;
+    } else if (GADAdSizeEqualToSize(adSize, kGADAdSizeSmartBannerLandscape)) {
+        self.bannerView.bannerSize = kAtmosplayAdsSmartBannerLandscape;
+    }
+    
     self.bannerView.bannerSize = kAtmosplayAdsBanner320x50;
     [self.bannerView loadAd];
 }
