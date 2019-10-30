@@ -42,7 +42,6 @@
         self.bannerView.bannerSize = kAtmosplayAdsSmartBannerLandscape;
     }
     
-    self.bannerView.bannerSize = kAtmosplayAdsBanner320x50;
     [self.bannerView loadAd];
 }
 
