@@ -7,7 +7,7 @@
 //
 
 #import "ZPLAYAdsAdMobAdapter.h"
-#import <PlayableAds/AtmosplayAdsBanner.h>
+#import <PlayableAds/PlayableAds.h>
 
 @implementation ZPLAYAdsAdMobAdapter
 

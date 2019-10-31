@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <GoogleMobileAds/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h>
 #import <GoogleMobileAds/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h>
-#import <PlayableAds/AtmosplayAdsBanner.h>
+#import <PlayableAds/PlayableAds.h>
 
 @import GoogleMobileAds;
 
