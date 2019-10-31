@@ -37,7 +37,7 @@
 }
 
 - (void)setUp {
-    NSDictionary *paramterDict = [self dictionaryWithJsonString:serverParameter];
+    NSDictionary *paramterDict = [self dictionaryWithJsonString:[_rewardedConnector credentials][@"parameter"]];
     NSCAssert(paramterDict, @"Yumi paramter is invalid，please check yumi adapter config");
     NSString *AppID = paramterDict[@"AppID"];
     NSString *AdUnitID = paramterDict[@"AdUnitID"];
@@ -47,6 +47,23 @@
     _pAd.delegate = self;
     [_rewardedConnector adapterDidSetUpRewardBasedVideoAd:self];
     NSLog(@"zp=> setUp");
+}
+
+#pragma mark: private
+- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err = nil;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err) {
+        NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
 }
 
 - (void)stopBeingDelegate {
