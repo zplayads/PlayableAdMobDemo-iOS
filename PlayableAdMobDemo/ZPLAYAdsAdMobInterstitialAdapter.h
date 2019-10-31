@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <PlayableAds/AtmosplayAdsBanner.h>
+#import <PlayableAds/PlayableAds.h>
 
 @import GoogleMobileAds;
 
