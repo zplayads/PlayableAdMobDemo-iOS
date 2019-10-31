@@ -70,7 +70,11 @@ e. Click "ADD CUSTOM EVENT" to add custom ad sources.
 f. Fill in the label of custom ad resource, using ZPLAYAds as an example, you can customize it and set floor price according to your needs. 
 ![img](imgs/013mediationgroupcreate6.png)
 
-g. Configure ZPLAY Ads ad source. Fill in adapter name in "Class Name" (as the following image shows, the class name in the picture is just a sample, please use the following adapter name), the Interstitial adapter name is `ZPLAYAdsAdMobInterstitialAdapter`, and Rewarded Video adapter name is `ZPLAYAdsAdMobAdapter`. There are should be two values separated by blank in "Parameter", the first one is the [App ID](https://sellers.zplayads.com/#/app/appList/) and the second one is the [Ad Unit ID](https://sellers.zplayads.com/#/ad/placeList/), which you applied on ZPLAY Ads. Please note that the order of these two values cannot be changed. Click "DONE" to complete configuration.
+g. Configure ZPLAY Ads ad source. Fill in adapter name in "Class Name" (as the following image shows, the class name in the picture is just a sample, please use the following adapter name). 
+	- The Interstitial adapter name is `ZPLAYAdsAdMobInterstitialAdapter`
+	- The Rewarded Video adapter name is `ZPLAYAdsAdMobAdapter`.
+	- The Banner adapter name is `ZplayAdsAdMobBannerAdapter` 
+	- Please enter Your [App ID](https://sellers.zplayads.com/#/app/appList/) and [Ad Unit ID](https://sellers.zplayads.com/#/ad/placeList/). Note: please use the json format, like `{"AppID":"YOUR_APP_ID","AdUnitID":"YOUR_ADUNIT_ID"}`. Then click "DONE" to complete configuration.
 ![img](imgs/014mediationgroupcreate7.png)
 
 Note: You are available to use the following ID when testing your App (no charge). Please replace them with the ID you applied in [ZPLAY Ads](https://sellers.zplayads.com/) when you publish your App.
