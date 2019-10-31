@@ -9,9 +9,7 @@
 #import "ZPLAYAdsAdMobInterstitialAdapter.h"
 
 static NSString *const customEventErrorDomain = @"com.google.CustomEvent";
-
 @implementation ZPLAYAdsAdMobInterstitialAdapter
-
 @synthesize delegate;
 
 - (void)requestInterstitialAdWithParameter:(NSString *GAD_NULLABLE_TYPE)serverParameter
@@ -22,7 +20,7 @@ static NSString *const customEventErrorDomain = @"com.google.CustomEvent";
     NSString *AppID = paramterDict[@"AppID"];
     NSString *AdUnitID = paramterDict[@"AdUnitID"];
     
-    self.pAd = [[PlayableAds alloc] initWithAdUnitID:AdUnitID appID:AppID;
+    self.pAd = [[PlayableAds alloc] initWithAdUnitID:AdUnitID appID:AppID];
     self.pAd.delegate = self;
     self.pAd.autoLoad = NO;
     [self.pAd loadAd];
