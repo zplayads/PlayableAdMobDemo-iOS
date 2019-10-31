@@ -76,7 +76,12 @@ f. 输入第三方广告源名称，此处以ZPLAYAds为例，可根据需求进
 
 ![img](imgs/013mediationgroupcreate6.png)
 
-g.  对ZPLAY Ads广告源进行配置，将适配器名称填在Class Name（如下图所示,图片中的类名只是一个示例，请使用以下适配器名称），ZPLAY Ads插屏适配器为ZPLAYAdsAdMobInterstitialAdapter，激励视频适配器为ZPLAYAdsAdMobAdapter。Parameter中需填写您在ZPLAY Ads申请的[应用ID](https://sellers.zplayads.com/#/app/appList/)和[广告位ID](https://sellers.zplayads.com/#/ad/placeList/)两个参数，通过空格区分且顺序不可更改，点击“DONE”完成ZPLAY Ads的配置
+g.  对ZPLAY Ads广告源进行配置，将适配器名称填在Class Name（如下图所示,图片中的类名只是一个示例，请使用以下适配器名称）
+	- ZPLAY Ads插屏适配器为ZPLAYAdsAdMobInterstitialAdapter
+	- 激励视频适配器为ZPLAYAdsAdMobAdapter
+	- Banner适配器为ZplayAdsAdMobBannerAdapter
+	- Parameter中需填写您在ZPLAY Ads申请的[应用ID](https://sellers.zplayads.com/#/app/appList/)和[广告位ID](https://sellers.zplayads.com/#/ad/placeList/)两个参数
+	- 使用json格式，输入应用ID及广告位ID，如：{"AppID":"YOUR_APP_ID","AdUnitID":"YOUR_ADUNIT_ID"}。点击“DONE”完成ZPLAY Ads的配置
 ![img](imgs/014mediationgroupcreate7.png)
 
 注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您在[ZPLAY Ads](https://sellers.zplayads.com/)申请的正式ID。
@@ -85,6 +90,7 @@ g.  对ZPLAY Ads广告源进行配置，将适配器名称填在Class Name（如
 | ---- | ---- | ------------------------------------ | ------------------------------------ |
 | iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
 | iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
+| iOS  | Banner |788C58DC-8290-F665-3C87-E7B1DBE8DFCE | 51449B74-3F06-FE87-6313-2B4E1BB443E3 |
 
 h. Ad source列表中可以看到所设置的广告源ZPLAY Ads，点击“SAVE”完成Mediation的配置
 
@@ -102,3 +108,4 @@ i. 检查第三方广告源是否添加完成，在[Apps列表](https://apps.adm
 | ---- | ---- | ------------------------------------ | ------------------------------------ |
 | iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
 | iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
+| iOS  | Banner |788C58DC-8290-F665-3C87-E7B1DBE8DFCE | 51449B74-3F06-FE87-6313-2B4E1BB443E3 |
