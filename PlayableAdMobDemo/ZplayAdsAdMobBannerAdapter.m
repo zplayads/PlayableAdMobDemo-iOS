@@ -17,17 +17,11 @@
 @implementation ZplayAdsAdMobBannerAdapter
 @synthesize delegate;
 - (void)requestBannerAd:(GADAdSize)adSize parameter:(nullable NSString *)serverParameter label:(nullable NSString *)serverLabel request:(nonnull GADCustomEventRequest *)request {
-    NSLog(@"zp=> AdMob UI config is right. %@", serverParameter);
-    if (!serverParameter){
-        NSLog(@"server parameter is nil");
-        return;
-    }
     
-    NSString *trimIds = [serverParameter stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSArray *ids = [trimIds componentsSeparatedByString:@" "];
-    NSLog(@"zp=> %@ : %@", ids[1], ids[0]);
-    NSString *AppID = ids[0];
-    NSString *AdUnitID = ids[1];
+    NSDictionary *paramterDict = [self dictionaryWithJsonString:serverParameter];
+    NSCAssert(paramterDict, @"Yumi paramter is invalid，please check yumi adapter config");
+    NSString *AppID = paramterDict[@"AppID"];
+    NSString *AdUnitID = paramterDict[@"AdUnitID"];
 
     self.bannerView = [[AtmosplayAdsBanner alloc] initWithAdUnitID:AdUnitID appID:AppID rootViewController:[self.delegate viewControllerForPresentingModalView]];
     self.bannerView.delegate = self;
@@ -44,6 +38,24 @@
     [self.bannerView loadAd];
 }
 
+#pragma mark: private
+- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err = nil;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err) {
+        NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
+}
+
+#pragma mark - AtmosplayAdsBannerDelegate
 /// Tells the delegate that an ad has been successfully loaded.
 - (void)atmosplayAdsBannerViewDidLoad:(AtmosplayAdsBanner *)bannerView {
     [self.delegate customEventBanner:self didReceiveAd:bannerView];

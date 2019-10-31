@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <GoogleMobileAds/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h>
 #import <GoogleMobileAds/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h>
+#import <PlayableAds/AtmosplayAdsBanner.h>
+
 @import GoogleMobileAds;
-@import PlayableAds;
 
 @interface ZPLAYAdsAdMobAdapter : NSObject<GADMRewardBasedVideoAdNetworkAdapter, PlayableAdsDelegate> {
 }

@@ -7,7 +7,7 @@
 //
 
 #import "ZPLAYAdsAdMobAdapter.h"
-@import PlayableAds;
+#import <PlayableAds/AtmosplayAdsBanner.h>
 
 @implementation ZPLAYAdsAdMobAdapter
 
@@ -37,11 +37,12 @@
 }
 
 - (void)setUp {
-    NSString *paramStr = [_rewardedConnector.credentials objectForKey:@"parameter"];
-    NSString *trimIds = [paramStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSArray *ids = [trimIds componentsSeparatedByString:@" "];
-    NSLog(@"playalbe appID: %@ and adUnitID: %@", ids[0], ids[1]);
-    _pAd = [[PlayableAds alloc] initWithAdUnitID:ids[1] appID:ids[0]];
+    NSDictionary *paramterDict = [self dictionaryWithJsonString:serverParameter];
+    NSCAssert(paramterDict, @"Yumi paramter is invalid，please check yumi adapter config");
+    NSString *AppID = paramterDict[@"AppID"];
+    NSString *AdUnitID = paramterDict[@"AdUnitID"];
+    
+    _pAd = [[PlayableAds alloc] initWithAdUnitID:AdUnitID appID:AppID];
     _pAd.autoLoad = NO;
     _pAd.delegate = self;
     [_rewardedConnector adapterDidSetUpRewardBasedVideoAd:self];
