@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PlayableAds/PlayableAds.h>
 
 @import GoogleMobileAds;
-@import PlayableAds;
 
 @interface ZPLAYAdsAdMobInterstitialAdapter : NSObject<GADCustomEventInterstitial, PlayableAdsDelegate>{
 }

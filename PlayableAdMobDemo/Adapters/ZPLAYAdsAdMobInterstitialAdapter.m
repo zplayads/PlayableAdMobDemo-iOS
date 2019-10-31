@@ -9,24 +9,18 @@
 #import "ZPLAYAdsAdMobInterstitialAdapter.h"
 
 static NSString *const customEventErrorDomain = @"com.google.CustomEvent";
-
 @implementation ZPLAYAdsAdMobInterstitialAdapter
-
 @synthesize delegate;
 
 - (void)requestInterstitialAdWithParameter:(NSString *GAD_NULLABLE_TYPE)serverParameter
                                      label:(NSString *GAD_NULLABLE_TYPE)serverLabel
                                    request:(GADCustomEventRequest *)request {
-    NSLog(@"zp=> AdMob UI config is right. %@", serverParameter);
-    if (!serverParameter){
-        NSLog(@"server parameter is nil");
-        return;
-    }
+    NSDictionary *paramterDict = [self dictionaryWithJsonString:serverParameter];
+    NSCAssert(paramterDict, @"Yumi paramter is invalid，please check yumi adapter config");
+    NSString *AppID = paramterDict[@"AppID"];
+    NSString *AdUnitID = paramterDict[@"AdUnitID"];
     
-    NSString *trimIds = [serverParameter stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSArray *ids = [trimIds componentsSeparatedByString:@" "];
-    NSLog(@"zp=> %@ : %@", ids[1], ids[0]);
-    self.pAd = [[PlayableAds alloc] initWithAdUnitID:ids[1] appID:ids[0]];
+    self.pAd = [[PlayableAds alloc] initWithAdUnitID:AdUnitID appID:AppID];
     self.pAd.delegate = self;
     self.pAd.autoLoad = NO;
     [self.pAd loadAd];
@@ -38,6 +32,23 @@ static NSString *const customEventErrorDomain = @"com.google.CustomEvent";
     } else {
         NSLog(@"ZPLAYAds interstitial not ready");
     }
+}
+
+#pragma mark: private
+- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err = nil;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err) {
+        NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
 }
 
 #pragma mark - PlayableAdsDelegate

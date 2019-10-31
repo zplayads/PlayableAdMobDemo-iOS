@@ -34,7 +34,7 @@ PODS:
   - PlayableAds (2.6.0)
 
 DEPENDENCIES:
-  - GoogleMobileAdsMediationZplayAds
+  - GoogleMobileAdsMediationZplayAds (from `GoogleMobileAdsMediationZplayAds.podspec`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -43,17 +43,20 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
   https://github.com/yumimobi/Specs.git:
-    - GoogleMobileAdsMediationZplayAds
     - PlayableAds
+
+EXTERNAL SOURCES:
+  GoogleMobileAdsMediationZplayAds:
+    :path: GoogleMobileAdsMediationZplayAds.podspec
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 5c625884f0788d22b48e3bb641e1d65c673dc7a5
   GoogleAppMeasurement: 434cc7be25e71dc04b8d0e3079125127b330e84a
-  GoogleMobileAdsMediationZplayAds: 1602b53b80112c652af0da1cae9411448e8c74b2
+  GoogleMobileAdsMediationZplayAds: 1cb7c06876c7b7cd936e67a7220666b826f12359
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PlayableAds: d929e4d90b898b3d15f5e942f2e05cd6b121fa5b
 
-PODFILE CHECKSUM: 871055ffc3baceaab9e5486a93c699d822b50fc0
+PODFILE CHECKSUM: ff9a73a3be6b5e548377b13479bd459d5204fbb1
 
 COCOAPODS: 1.8.4
