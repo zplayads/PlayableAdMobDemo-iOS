@@ -49,11 +49,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 5c625884f0788d22b48e3bb641e1d65c673dc7a5
   GoogleAppMeasurement: 434cc7be25e71dc04b8d0e3079125127b330e84a
-  GoogleMobileAdsMediationZplayAds: 1602b53b80112c652af0da1cae9411448e8c74b2
+  GoogleMobileAdsMediationZplayAds: 0e033afc0fa3b862ea8552d58eb9b779add39fc4
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PlayableAds: d929e4d90b898b3d15f5e942f2e05cd6b121fa5b
 
-PODFILE CHECKSUM: 871055ffc3baceaab9e5486a93c699d822b50fc0
+PODFILE CHECKSUM: b5a54181263a295c969a9a84b961700204c90aab
 
 COCOAPODS: 1.8.4
