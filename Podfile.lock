@@ -37,7 +37,7 @@ DEPENDENCIES:
   - GoogleMobileAdsMediationZplayAds (from `GoogleMobileAdsMediationZplayAds.podspec`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
@@ -52,11 +52,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 5c625884f0788d22b48e3bb641e1d65c673dc7a5
   GoogleAppMeasurement: 434cc7be25e71dc04b8d0e3079125127b330e84a
-  GoogleMobileAdsMediationZplayAds: 1cb7c06876c7b7cd936e67a7220666b826f12359
+  GoogleMobileAdsMediationZplayAds: 04df2b61e9c0d3fbbb1c3a562b59f6bdac30c959
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  PlayableAds: d929e4d90b898b3d15f5e942f2e05cd6b121fa5b
+  PlayableAds: aa16a9538c8c95c1927fce3128f56966818d79ae
 
 PODFILE CHECKSUM: ff9a73a3be6b5e548377b13479bd459d5204fbb1
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.7.5
