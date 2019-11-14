@@ -83,6 +83,7 @@ Note: You are available to use the following ID when testing your App (no charge
 | --- | ------------ | ------------------------------------ | ------------------------------------ |
 | iOS | Rewarded     | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
 | iOS | Interstitial | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
+| iOS | Banner | A650AB0D-7BFC-2A81-3066-D3170947C3DA | A49521F3-339D-994F-FC80-F9C4170AA0CF |
 
 8. You can see ZPLAY Ads in Ad sources list. Click "SAVE" to complete ZPLAYAds configuration.
 ![img](imgs/015mediationgroupcreate8.png)
@@ -99,3 +100,4 @@ You are available to use the following ID when testing your App (no charge). Ple
 | --- | ------------ | ------------------------------------ | ------------------------------------ |
 | iOS | Rewarded     | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
 | iOS | Interstitial | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
+| iOS | Banner | A650AB0D-7BFC-2A81-3066-D3170947C3DA | A49521F3-339D-994F-FC80-F9C4170AA0CF |
