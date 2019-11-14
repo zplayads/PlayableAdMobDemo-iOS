@@ -1,43 +1,43 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.42.2):
-    - GoogleAppMeasurement (~> 5.7)
-  - GoogleAppMeasurement (5.8.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
-    - GoogleUtilities/MethodSwizzler (~> 5.2)
-    - GoogleUtilities/Network (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
-    - nanopb (~> 0.3)
-  - GoogleMobileAdsMediationZplayAds (2.4.2.0):
+  - Google-Mobile-Ads-SDK (7.52.0):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.1.5):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleMobileAdsMediationZplayAds (2.6.0):
     - Google-Mobile-Ads-SDK
-    - PlayableAds (~> 2.4.0)
-  - GoogleUtilities/AppDelegateSwizzler (5.5.0):
+    - PlayableAds (~> 2.6.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.3.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (5.5.0)
-  - GoogleUtilities/Logger (5.5.0):
+  - GoogleUtilities/Environment (6.3.1)
+  - GoogleUtilities/Logger (6.3.1):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (5.5.0):
+  - GoogleUtilities/MethodSwizzler (6.3.1):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (5.5.0):
+  - GoogleUtilities/Network (6.3.1):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (5.5.0)"
-  - GoogleUtilities/Reachability (5.5.0):
+  - "GoogleUtilities/NSData+zlib (6.3.1)"
+  - GoogleUtilities/Reachability (6.3.1):
     - GoogleUtilities/Logger
-  - nanopb (0.3.901):
-    - nanopb/decode (= 0.3.901)
-    - nanopb/encode (= 0.3.901)
-  - nanopb/decode (0.3.901)
-  - nanopb/encode (0.3.901)
-  - PlayableAds (2.4.2)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - PlayableAds (2.6.0)
 
 DEPENDENCIES:
   - GoogleMobileAdsMediationZplayAds
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleMobileAdsMediationZplayAds
@@ -46,13 +46,13 @@ SPEC REPOS:
     - PlayableAds
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: 8f4f7e793bfd3fff5b082181b54112f81b579a67
-  GoogleAppMeasurement: 1624046ab1bcc5e170061a56ef5679000b079c8e
-  GoogleMobileAdsMediationZplayAds: 64d3d218eacceffa0e731de33c51c540f5435b44
-  GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
-  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  PlayableAds: 090cf2d639752e110b12a09a0cb2d42a5520a732
+  Google-Mobile-Ads-SDK: 62f6244637306cb60a1b4adda067f53224c7a860
+  GoogleAppMeasurement: 037f46d1d8ae8b312720f1042585ab961a1289e3
+  GoogleMobileAdsMediationZplayAds: e0be260d91bb9aee1e8623a7db8da7fe8ec08dd3
+  GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PlayableAds: 4c9e4d1e705270a7d7a44c75dd45ba4ed3395ed3
 
-PODFILE CHECKSUM: 8d169989987d5f7dc84eafc065b3ca9d3981d1e5
+PODFILE CHECKSUM: 405ca89dcfc8da71b216971522bb5ec8b6a57dc4
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

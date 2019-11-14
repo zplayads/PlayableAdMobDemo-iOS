@@ -25,58 +25,63 @@ pod 'GoogleMobileAdsMediationZplayAds'
 ## 2 在[AdMob](https://apps.admob.com/v2/home)平台添加ZPLAY Ads广告广告源
 
 #### 2.1 添加新应用
-a. 选择目录中Apps，点击“ADD APP”按钮
+1. 选择目录中Apps，点击“ADD APP”按钮
 ![image](imgs/018addapp1.png)
 
-b. 选择您的应用是否已经上架Google Play或App Store，若已经上架Google Play或App Store请选择“YES”，若未上架请选择“NO”，以下以未上架为例
+2. 选择您的应用是否已经上架Google Play或App Store，若已经上架Google Play或App Store请选择“YES”，若未上架请选择“NO”，以下以未上架为例
 ![image](imgs/018addapp2.png)
 
-c. 输入应用名称，选择应用操作系统，点击“ADD”保存添加的应用
+3. 输入应用名称，选择应用操作系统，点击“ADD”保存添加的应用
 ![image](imgs/019addapp3.png)
 
 #### 2.2 添加新广告位
-a. 添加应用后，点击“NEXT: CREATE AD UNIT”按钮可为此应用添加广告位
+1. 添加应用后，点击“NEXT: CREATE AD UNIT”按钮可为此应用添加广告位
 
 ![image](imgs/addunit.jpg)
 
-b. 选择您所需要的广告形式，ZPLAY Ads目前支持Interstitial及Rewarded，此处以Rewarded为例
+2. 选择您所需要的广告形式，ZPLAY Ads目前支持Interstitial及Rewarded，此处以Rewarded为例
 
 ![image](imgs/003addadunit2RV1.png)
 
-c. 输入广告位名称，点击“CREAT AD UNIT”保存添加的广告位
+3. 输入广告位名称，点击“CREAT AD UNIT”保存添加的广告位
 
 ![image](imgs/004addadunit2RV2.png)
 
-d. 获取此广告位的app ID及ad unit ID，点击“DONE”完成广告位的创建
+4. 获取此广告位的app ID及ad unit ID，点击“DONE”完成广告位的创建
 
 ![image](imgs/005addadunit2RV3.png)
 
 #### 2.3 添加ZPLAY Ads广告源
-a. 进入[Mediation目录](https://apps.admob.com/v2/mediation/groups/list)，选择“CREATE MEDIATION GROUP”
+1. 进入[Mediation目录](https://apps.admob.com/v2/mediation/groups/list)，选择“CREATE MEDIATION GROUP”
 
 ![img](imgs/007mediationgroupcreate.png)
 
-b. 选择您要使用的广告形式及操作系统，ZPLAY Ads目前支持Interstitial及Rewarded，此处以Rewarded为例，点击“CONTINUE”进入下一步
+2. 选择您要使用的广告形式及操作系统，ZPLAY Ads目前支持Interstitial及Rewarded，此处以Rewarded为例，点击“CONTINUE”进入下一步
 
 ![img](imgs/008mediationgroupcreate1.png)
 
-c. 输入Mediation名字，通过Location进行地域设置，状态置位Enable时Mediation才可生效，请确保状态为Enable，点击“ADD AD UNIT”选择要添加的广告位
+3. 输入Mediation名字，通过Location进行地域设置，状态置位Enable时Mediation才可生效，请确保状态为Enable，点击“ADD AD UNIT”选择要添加的广告位
 
 ![img](imgs/009mediationgroupcreat2.png)
 
-d. 在广告位选择框中，先后选择所需应用及广告位，点击“DONE”
+4. 在广告位选择框中，先后选择所需应用及广告位，点击“DONE”
 
 ![img](imgs/011mediationgroupcreate4.png)
 
-e. 点击“ADD CUSTOM EVENT”添加自定义广告源
+5. 点击“ADD CUSTOM EVENT”添加自定义广告源
 
 ![img](imgs/012mediationgroupcreate5.png)
 
-f. 输入第三方广告源名称，此处以ZPLAYAds为例，可根据需求进行自定义，根据需要对第三方广告源进行价格设置
+6. 输入第三方广告源名称，此处以ZPLAYAds为例，可根据需求进行自定义，根据需要对第三方广告源进行价格设置
 
 ![img](imgs/013mediationgroupcreate6.png)
 
-g.  对ZPLAY Ads广告源进行配置，将适配器名称填在Class Name（如下图所示,图片中的类名只是一个示例，请使用以下适配器名称），ZPLAY Ads插屏适配器为ZPLAYAdsAdMobInterstitialAdapter，激励视频适配器为ZPLAYAdsAdMobAdapter。Parameter中需填写您在ZPLAY Ads申请的[应用ID](https://sellers.zplayads.com/#/app/appList/)和[广告位ID](https://sellers.zplayads.com/#/ad/placeList/)两个参数，通过空格区分且顺序不可更改，点击“DONE”完成ZPLAY Ads的配置
+7.  对ZPLAY Ads广告源进行配置，将适配器名称填在Class Name（如下图所示,图片中的类名只是一个示例，请使用以下适配器名称）
+	- ZPLAY Ads插屏适配器为ZPLAYAdsAdMobInterstitialAdapter
+	- 激励视频适配器为ZPLAYAdsAdMobAdapter
+	- Banner适配器为ZplayAdsAdMobBannerAdapter
+	- Parameter中需填写您在ZPLAY Ads申请的[应用ID](https://sellers.zplayads.com/#/app/appList/)和[广告位ID](https://sellers.zplayads.com/#/ad/placeList/)两个参数
+	- 使用json格式，输入应用ID及广告位ID，如：{"AppID":"YOUR_APP_ID","AdUnitID":"YOUR_ADUNIT_ID"}。点击“DONE”完成ZPLAY Ads的配置
 ![img](imgs/014mediationgroupcreate7.png)
 
 注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您在[ZPLAY Ads](https://sellers.zplayads.com/)申请的正式ID。
@@ -85,12 +90,13 @@ g.  对ZPLAY Ads广告源进行配置，将适配器名称填在Class Name（如
 | ---- | ---- | ------------------------------------ | ------------------------------------ |
 | iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
 | iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
+| iOS  | Banner |788C58DC-8290-F665-3C87-E7B1DBE8DFCE | 51449B74-3F06-FE87-6313-2B4E1BB443E3 |
 
-h. Ad source列表中可以看到所设置的广告源ZPLAY Ads，点击“SAVE”完成Mediation的配置
+8. Ad source列表中可以看到所设置的广告源ZPLAY Ads，点击“SAVE”完成Mediation的配置
 
 ![img](imgs/015mediationgroupcreate8.png)
 
-i. 检查第三方广告源是否添加完成，在[Apps列表](https://apps.admob.com/v2/apps/list)中找到步骤d中选择的应用及广告位，广告位Mediation groups中active数量增加表示广告源添加成功
+9. 检查第三方广告源是否添加完成，在[Apps列表](https://apps.admob.com/v2/apps/list)中找到步骤d中选择的应用及广告位，广告位Mediation groups中active数量增加表示广告源添加成功
 
 ![img](imgs/016mediationgroupcreate9.png)
 
@@ -102,3 +108,4 @@ i. 检查第三方广告源是否添加完成，在[Apps列表](https://apps.adm
 | ---- | ---- | ------------------------------------ | ------------------------------------ |
 | iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
 | iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
+| iOS  | Banner |788C58DC-8290-F665-3C87-E7B1DBE8DFCE | 51449B74-3F06-FE87-6313-2B4E1BB443E3 |
