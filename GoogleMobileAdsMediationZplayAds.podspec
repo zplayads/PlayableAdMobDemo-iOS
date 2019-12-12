@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.dependency 'PlayableAds', '~> 2.6.0'
   s.dependency 'Google-Mobile-Ads-SDK'
+  s.static_framework = true
 end
